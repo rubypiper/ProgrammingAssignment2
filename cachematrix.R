@@ -1,6 +1,7 @@
 ## caches the inverse of a matrix
 
-## creates a special "matrix" object that can cache its inverse
+## creates a special "matrix" object that can cache its inverse. Has the ability to 
+## set the matrix, get the matrix, set the inverse of the matrix, get the inverse of the matrix
 
 makeCacheMatrix <- function(x = matrix()) {
         inv <- NULL
@@ -29,6 +30,6 @@ cacheSolve <- function(x, ...) {
         inv <- solve(mat, ...)
         x$setInverse(inv)
         inv
-        ##solve(x)
-        ## Return a matrix that is the inverse of 'x'
+        
+        ## Returns a matrix that is the inverse of 'x'
 }
